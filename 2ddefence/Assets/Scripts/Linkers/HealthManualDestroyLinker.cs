@@ -20,11 +20,5 @@ public class HealthManualDestroyLinker : MonoBehaviour
         health.OnDeath
         .Subscribe(_ => manualDestoy.DestroySelf())
         .AddTo(this); // 리소스 낭비 방지를 위해 추가
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    }    
 }
