@@ -3965,6 +3965,9 @@ GameObject:
   - component: {fileID: 1631939583}
   - component: {fileID: 1631939584}
   - component: {fileID: 1631939585}
+  - component: {fileID: 1631939586}
+  - component: {fileID: 1631939588}
+  - component: {fileID: 1631939587}
   m_Layer: 0
   m_Name: Farmer 0_Tower
   m_TagString: Untagged
@@ -4052,6 +4055,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828acb3e614721c42904c2d052b04e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IntervalTimerObjectSpawnerLinker
+--- !u!114 &1631939586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631939579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7f9f9f5b51db44eaccee4a43fa4c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackControllerIntervalTimerLinker
+--- !u!114 &1631939587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631939579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca87d6647923a31438be2127c22834dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawnerTargetTrackerLinker
+  _targetTracker: {fileID: 1681460856}
+--- !u!114 &1631939588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631939579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226d08bb5a050ee42abad58444a8b563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetTrackerComponent
 --- !u!1 &1681460850
 GameObject:
   m_ObjectHideFlags: 0

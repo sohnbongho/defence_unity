@@ -12,6 +12,7 @@ public class HealthComponent : MonoBehaviour, IDamageable
 
     private readonly Subject<Unit> _deathSubject = new Subject<Unit>();
     public Observable<Unit> OnDeath => _deathSubject; // 이렇게 하면 외부에서 OnNext호출이 안된다.
+    public GameObject RelatedGameObject => gameObject;
 
     private void Awake()
     {

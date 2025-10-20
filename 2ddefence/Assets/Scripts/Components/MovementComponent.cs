@@ -11,4 +11,8 @@ public class MovementComponent : MonoBehaviour
     {
         transform.position += _moveDirection * _moveSpeed * Time.deltaTime;
     }
+    public void SetDirection(Vector3 direction)
+    {
+        _moveDirection = direction;
+    }
 }
