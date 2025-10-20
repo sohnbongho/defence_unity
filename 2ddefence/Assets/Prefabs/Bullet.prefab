@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 2563853137044452418}
   - component: {fileID: 2840219716788312891}
   - component: {fileID: 2235762187054376734}
+  - component: {fileID: -3380131408566658760}
+  - component: {fileID: -5499589760966026494}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -212,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a40309c5e5088d4fb618d8954afaec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageApplicatorComponent
-  _attackPower: 15
+  _attackPower: 20
 --- !u!114 &2235762187054376734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,3 +227,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732128cb3e424434b80426e1f1c6b1d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangeDetectorDamageApplicatorLinker
+--- !u!114 &-3380131408566658760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4899397073175576543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2fed4b3ebba424ba522eb25977d978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ManualDestroyComponent
+--- !u!114 &-5499589760966026494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4899397073175576543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4243154d7b67fbb49bdc77d3d11e7f3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageApplicatorManualDestroyLinker
