@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: -3380131408566658760}
   - component: {fileID: -5499589760966026494}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: Bullet_Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e165e8ecb8a1344a4072724b967808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangeDetectorComponent
-  _targetTag: Enemy
+  _targetTag: Player
 --- !u!50 &1165420152577379497
 Rigidbody2D:
   serializedVersion: 5
