@@ -3304,9 +3304,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1631939583}
-        m_TargetAssemblyTypeName: IntervalTimerComponent, Assembly-CSharp
-        m_MethodName: DeActive
+      - m_Target: {fileID: 8846598954363523945}
+        m_TargetAssemblyTypeName: MovementComponent, Assembly-CSharp
+        m_MethodName: StopMoving
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3535,17 +3535,6 @@ Transform:
   - {fileID: 835521400}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1631939583 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5832610841318327044, guid: 211b846042b686c408967148f64c2311, type: 3}
-  m_PrefabInstance: {fileID: 5271771119563441650}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf55aa2c0d60f464e96953e0e1b08afe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::IntervalTimerComponent
 --- !u!1 &1764199775
 GameObject:
   m_ObjectHideFlags: 0
@@ -3878,9 +3867,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1631939583}
-        m_TargetAssemblyTypeName: IntervalTimerComponent, Assembly-CSharp
-        m_MethodName: Active
+      - m_Target: {fileID: 8846598954363523945}
+        m_TargetAssemblyTypeName: MovementComponent, Assembly-CSharp
+        m_MethodName: StartMoving
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4132,6 +4121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8083494321147704972}
+  - component: {fileID: 8846598954363523945}
   - component: {fileID: 6811866473036735125}
   - component: {fileID: 5053489635357260600}
   - component: {fileID: 5183366957660357377}
@@ -4145,6 +4135,7 @@ GameObject:
   - component: {fileID: 8846598954363523942}
   - component: {fileID: 8846598954363523941}
   - component: {fileID: 8846598954363523940}
+  - component: {fileID: 8846598954363523946}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -4442,6 +4433,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthComponent
   MaxHealth: 100
   CurrentHealth: 0
+--- !u!114 &8846598954363523945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314614745111595842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd5fa6e6637857047878fd7f803e7cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovementComponent
+  _moveSpeed: 5
+  _moveDirection: {x: 0, y: -1, z: 0}
+--- !u!114 &8846598954363523946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314614745111595842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da607fc1e5b4ff449b7d61e0b354a5ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackControllerMovementLinker
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
